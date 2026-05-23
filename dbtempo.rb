@@ -5,21 +5,21 @@
 class Dbtempo < Formula
   desc "Database performance monitoring and query analysis CLI"
   homepage "https://dbtempo.com"
-  version "0.1.4"
+  version "0.1.5"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/davinderkumar/homebrew-tap/releases/download/v0.1.4/homebrew-tap_darwin_x86_64.tar.gz"
-      sha256 "beb8516e15096fd65ee36cd32b6b512d1e4568175849da2012c74f42f7db1709"
+      url "https://github.com/davinderkumar/homebrew-tap/releases/download/v0.1.5/homebrew-tap_darwin_x86_64.tar.gz"
+      sha256 "f17e6521b3757870c01dd85d98e1e4690f472b7e845ee0c52cdb2cbfa9de5f50"
 
       define_method(:install) do
         bin.install "dbtempo"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/davinderkumar/homebrew-tap/releases/download/v0.1.4/homebrew-tap_darwin_arm64.tar.gz"
-      sha256 "cc90cf94af129bd10c5e1b12d3f4957a15568b87e6f15626b6e322a9a02c9260"
+      url "https://github.com/davinderkumar/homebrew-tap/releases/download/v0.1.5/homebrew-tap_darwin_arm64.tar.gz"
+      sha256 "6485813f558f9a4d0771ecdaf4b868f78a3d25ae0a14500149e29abb3e75a106"
 
       define_method(:install) do
         bin.install "dbtempo"
@@ -29,15 +29,15 @@ class Dbtempo < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/davinderkumar/homebrew-tap/releases/download/v0.1.4/homebrew-tap_linux_x86_64.tar.gz"
-      sha256 "eb8f2e04e77d8d5797bba07830d1565019decd1bf16026eea0747414107113c2"
+      url "https://github.com/davinderkumar/homebrew-tap/releases/download/v0.1.5/homebrew-tap_linux_x86_64.tar.gz"
+      sha256 "e3067c9dad3371779469e593d56102245333440bb65d599f706cf5d6d831a78b"
       define_method(:install) do
         bin.install "dbtempo"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/davinderkumar/homebrew-tap/releases/download/v0.1.4/homebrew-tap_linux_arm64.tar.gz"
-      sha256 "4776fa649382ede02e6c0bdeaeb9e7173189c4ccf090ffb6c7a3a836de11f9b3"
+      url "https://github.com/davinderkumar/homebrew-tap/releases/download/v0.1.5/homebrew-tap_linux_arm64.tar.gz"
+      sha256 "830be64cd4f04b317d6bc3a75a978c7da0fba18838807c810d311e935031bdaf"
       define_method(:install) do
         bin.install "dbtempo"
       end
